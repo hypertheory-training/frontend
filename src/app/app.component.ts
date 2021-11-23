@@ -1,3 +1,4 @@
+import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { KeycloakService } from 'keycloak-angular';
 import { KeycloakProfile } from 'keycloak-js';
@@ -11,7 +12,7 @@ export class AppComponent implements OnInit {
   title = 'frontend';
   public isLoggedIn = false;
   public userProfile: KeycloakProfile | null = null;
-  constructor(private readonly keycloak: KeycloakService) { }
+  constructor(private readonly keycloak: KeycloakService, private readonly http: HttpClient) { }
   async ngOnInit() {
     this.isLoggedIn = await this.keycloak.isLoggedIn();
     if (this.isLoggedIn) {
@@ -26,5 +27,9 @@ export class AppComponent implements OnInit {
 
   public logout() {
     this.keycloak.logout();
+  }
+
+  public getIt() {
+    this.http.get('http://localhost:5000/topics').subscribe(c => console.log(c));
   }
 }
