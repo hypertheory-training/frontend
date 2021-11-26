@@ -11,6 +11,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NotificationDropdownComponent } from './components/notification-dropdown/notification-dropdown.component';
 import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.component';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.
     NotificationDropdownComponent,
     UserDropdownComponent,
     TopicsComponent,
+    DashboardComponent,
 
 
   ],
