@@ -5,10 +5,26 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { TopicsComponent } from './components/topics/topics.component';
+import { AuthComponent } from './components/auth/auth.component';
+import { NavbarComponent } from './components/navbar/navbar.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { NotificationDropdownComponent } from './components/notification-dropdown/notification-dropdown.component';
+import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.component';
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    TopicsComponent,
+    AuthComponent,
+    NavbarComponent,
+    SidebarComponent,
+    NotificationDropdownComponent,
+    UserDropdownComponent,
+    TopicsComponent,
+
+
   ],
   imports: [
     BrowserModule,
