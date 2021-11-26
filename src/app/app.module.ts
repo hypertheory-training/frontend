@@ -12,6 +12,8 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { NotificationDropdownComponent } from './components/notification-dropdown/notification-dropdown.component';
 import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { FooterComponent } from './components/layout/footer/footer.component';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 
 @NgModule({
@@ -25,6 +27,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     UserDropdownComponent,
     TopicsComponent,
     DashboardComponent,
+    FooterComponent,
 
 
   ],
@@ -32,7 +35,8 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     BrowserModule,
     AppRoutingModule,
     KeycloakAngularModule,
-    HttpClientModule
+    HttpClientModule,
+    FontAwesomeModule
   ],
   providers: [
     {
