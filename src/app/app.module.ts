@@ -15,6 +15,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GravatarModule } from 'ngx-gravatar';
+import { ReduxRootModule } from './redux-root.module';
 
 
 @NgModule({
@@ -38,7 +39,8 @@ import { GravatarModule } from 'ngx-gravatar';
     KeycloakAngularModule,
     HttpClientModule,
     FontAwesomeModule,
-    GravatarModule
+    GravatarModule,
+    ReduxRootModule
   ],
   providers: [
     {
