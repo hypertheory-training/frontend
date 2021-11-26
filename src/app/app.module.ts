@@ -16,6 +16,7 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { GravatarModule } from 'ngx-gravatar';
 import { ReduxRootModule } from './redux-root.module';
+import { PlanModule } from './modules/plan/plan.module';
 
 
 @NgModule({
@@ -40,7 +41,8 @@ import { ReduxRootModule } from './redux-root.module';
     HttpClientModule,
     FontAwesomeModule,
     GravatarModule,
-    ReduxRootModule
+    ReduxRootModule,
+    PlanModule
   ],
   providers: [
     {
