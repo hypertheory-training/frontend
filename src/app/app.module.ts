@@ -6,14 +6,15 @@ import { KeycloakAngularModule, KeycloakService } from 'keycloak-angular';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TopicsComponent } from './components/topics/topics.component';
-import { AuthComponent } from './components/auth/auth.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-import { NotificationDropdownComponent } from './components/notification-dropdown/notification-dropdown.component';
-import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.component';
+import { AuthComponent } from './components/layout/auth/auth.component';
+import { NavbarComponent } from './components/layout/navbar/navbar.component';
+import { SidebarComponent } from './components/layout/sidebar/sidebar.component';
+import { NotificationDropdownComponent } from './components/layout/notification-dropdown/notification-dropdown.component';
+import { UserDropdownComponent } from './components/layout/user-dropdown/user-dropdown.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { GravatarModule } from 'ngx-gravatar';
 
 
 @NgModule({
@@ -36,7 +37,8 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
     AppRoutingModule,
     KeycloakAngularModule,
     HttpClientModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    GravatarModule
   ],
   providers: [
     {
